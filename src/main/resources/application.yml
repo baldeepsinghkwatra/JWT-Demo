@@ -1,0 +1,32 @@
+# config context path to "/" by setting an empty string
+server:
+  contextPath:
+
+# JACKSON
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+ 
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev
+    username: root
+    password: mindfire
+    driver-class-name: com.mysql.jdbc.Driver   
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 99999999999
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+
+#logging:
+#  level:
+#    org.springframework:
+#      security: DEBUG
+
+
+ 
